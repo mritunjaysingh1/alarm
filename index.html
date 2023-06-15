@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <div id="currTime"></div>
+      <div id="form">
+        <form>
+          <fieldset>
+            <input type="number" name="hour" min="0" max="12" />
+            <input type="number" name="min" min="0" max="60" required />
+            <input type="number" name="sec" min="0" max="60" required />
+            <select name="zone">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+            <input type="submit" value="submit" id="sub" />
+          </fieldset>
+        </form>
+      </div>
+      <div id="list">
+        <ul></ul>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
