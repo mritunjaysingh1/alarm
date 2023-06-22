@@ -36,7 +36,6 @@ const checkAlarm = () => {
   });
 };
 
-
 // Delete alarm
 function deleteAlarm(alarmId) {
   console.log("Delete the Alarm");
@@ -84,7 +83,7 @@ function currentTime() {
   var hours = date.getHours();
   var min = date.getMinutes();
   var sec = date.getSeconds();
-  var zone = hours > 12 ? "PM" : "AM";
+  var zone = hours >= 12 ? "PM" : "AM";
   hours = hours > 12 ? hours - 12 : hours;
 
   var time = getTime(hours, min, sec);
